@@ -1,2 +1,6 @@
 game_of_life
+__pycache__
+.pytest_cache
+dd.py
+test_dd.py
 
