@@ -48,7 +48,7 @@ def test_rules_block():
 
 
 def test_display():
-    "Checking display with given characters"
+    #Checking display with given characters
     theboard = [[0, 0, 0], [1, 1, 1], [0, 0, 0]]
     result = '\u25E6 \u25E6 \u25E6\n\n\u25B2 \u25B2 \u25B2\n\n\u25E6 \u25E6 \u25E6'
     assert gameoflife.display(theboard) == result

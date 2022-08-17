@@ -41,7 +41,7 @@ def rules(theboard):
     return new_board
 
 def display(theboard):
-    "Displays the alive and dead cell with unicode symbols"
+    #Displays the alive and dead cell with unicode symbols
     size = len(theboard)
     rows = []
     for i in range(size):
@@ -57,7 +57,7 @@ def display(theboard):
 
 def main(theboard):
     for i in range(0, 10):
-        print("{} generation".format(i))
+        print("Generation - {}".format(i))
         print(display(theboard))
         theboard = rules(theboard)
         time.sleep(0.5)
@@ -65,8 +65,8 @@ def main(theboard):
 if __name__ == "__main__":
     theboard = [[0, 0, 0, 0, 0],
                 [1, 1, 1, 0, 0],
-                [0, 0, 0, 0, 0],
-                [0, 0, 0, 0, 0],
+                [0, 0, 1, 0, 0],
+                [0, 0, 1, 0, 0],
                 [0, 0, 0, 0, 0]]
 
     main(theboard)
